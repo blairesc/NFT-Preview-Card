@@ -32,19 +32,48 @@ html {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.nft-card .view-icon {
-  display: none;
-}
-
-.nft-card .equilibrium-img {
-  width: 100%;
-  border-radius: 5px;
+.nft-card .nft-img {
+  position: relative;
   cursor: pointer;
 }
 
-.nft-card .equilibrium-img:hover {
-  background: var(--cyan);
+.nft-card .nft-img .view-icon {
+  position: absolute;
+  top: 42%;
+  left: 42%;
+  cursor: pointer;
+  display: none;
 }
+
+.nft-card .nft-img .equilibrium-img {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nft-card .nft-img .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98.5%;
+  width: 100%;
+  border-radius: 6px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--cyan);
+}
+
+.nft-card .nft-img:hover .view-icon{
+  display: block;
+}
+
+.nft-card .nft-img:hover .overlay{
+  opacity: .4;
+}
+
 
 .nft-content .content-description h3 {
   color: var(--white);
