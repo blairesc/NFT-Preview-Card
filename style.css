@@ -24,7 +24,7 @@ html {
 }
 
 .nft-card {
-  width: 25%;
+  width: 20rem;
   background-color: var(--card-bg);
   padding: 25px;
   margin: 2rem auto;
@@ -42,9 +42,17 @@ html {
   cursor: pointer;
 }
 
+.nft-card .equilibrium-img:hover {
+  background: var(--cyan);
+}
+
 .nft-content .content-description h3 {
   color: var(--white);
   cursor: pointer;
+}
+
+.nft-content .content-description h3:hover {
+  color: var(--cyan);
 }
 
 .nft-content .content-description p {
@@ -93,3 +101,8 @@ hr {
   color: var(--white);
   cursor: pointer;
 }
+
+.nft-content .creator p span:hover {
+  color: var(--cyan);
+}
+
